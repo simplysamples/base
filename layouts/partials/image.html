@@ -28,7 +28,7 @@
             <source media="(min-width: {{$size}}px)"
                     width="{{ $sized_image.Width }}"
                     height="{{ $sized_image.Height }}"
-                    srcset="{{ $sized_image.RelPermalink }}"
+                    srcset="{{ $sized_image.RelPermalink }}, {{ $sized_image2x.RelPermalink}} 2x"
                     type="{{ print "image/" . }}" />
             {{- end -}}
         {{- end -}}
